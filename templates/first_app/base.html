@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" style="width: 30rem; margin-top:100px;margin-left:40%; height: 500px;
+     
+     
+    padding: 10px;">
+    <div style="height:50px">
+             
+            <a href="{% url 'first_app:index'    %}" style="font-size: xx-large; ">Home     </a> 
+
+              <a href="{% url 'first_app:student_form'    %}" style="font-size: xx-large;">     AddContact </a>
+    </div>
+        <div class="card-body">
+            
+           
+      
+    
+              
+
+    {% block body_block%}
+ 
+    {% endblock %}
+</div>
+</div>
+</body>
+</html>
